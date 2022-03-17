@@ -1,0 +1,16 @@
+*, *::after, *::before{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --primary: #512051;
+    --secondary: #F7F2F7;
+    --primary-text: #927B91;
+    --secondary-text: #EE69A4;
+}
+
+main{
+    min-height: 100vh;
+    background-color: yellow;
+}
