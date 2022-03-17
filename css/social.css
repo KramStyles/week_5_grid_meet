@@ -37,7 +37,7 @@ main{
 
 .topside{
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
     justify-content: space-around;
 }
 .topside h1{
@@ -59,4 +59,10 @@ main{
     grid-template-columns: auto auto;
     align-items: center;
     margin-bottom: 20px;
+}
+.info-box:nth-child(2){
+    margin-left: 20px;
+}
+.info-box:nth-child(3){
+    margin-left: 40px;
 }
