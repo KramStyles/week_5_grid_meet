@@ -12,5 +12,16 @@
 
 main{
     min-height: 100vh;
-    background-color: yellow;
+    position: relative;
+
+}
+
+.top-img{
+    position: absolute;
+    /* z-index: -1; */
+}
+.bottom-img{
+    position:absolute;
+    bottom: 0;
+    right: 0;
 }
