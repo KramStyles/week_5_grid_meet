@@ -39,6 +39,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 400px));
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 .topside h1{
     font-size: 3em;
@@ -61,8 +62,34 @@ main{
     margin-bottom: 20px;
 }
 .info-box:nth-child(2){
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .info-box:nth-child(3){
-    margin-left: 40px;
+    margin-left: 30px;
+}
+
+.downside{
+    margin: 60px auto;
+}
+
+.downside div{
+    padding: 30px;
+    background-color: var(--primary);
+    color: white;
+    margin: auto 30px;
+    border-radius: 10px;
+
+}
+.downside aside{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.downside img{
+    margin-right: 15px;
+}
+
+.downside p{
+    line-height: 23px;
+    font-size: 13px;
 }
