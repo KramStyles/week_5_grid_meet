@@ -48,4 +48,14 @@ main{
 }
 .topside p{
     line-height: 25px;
+    color: var(--primary-text);
+}
+.info-box{
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
