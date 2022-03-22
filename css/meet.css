@@ -23,6 +23,25 @@ body{
     font-family: 'Red Hat Display' ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.hero{
+    min-height: 400px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, auto));
+    grid-template-rows: 200px;
+    padding: 100px;
+    padding-bottom: 0;
+    justify-content: center;
+    grid-gap: 20px;
+    position: relative;
+}
+section img{
+    object-fit: contain;
+    border-radius: 10px;
+}
+
 article{
     text-align: center;
     width: 40%;
@@ -55,7 +74,7 @@ article h5{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 2px solid var(--dark-one);
+    border: 1px solid var(--dark-one);
     color: var(--dark-one);
     font-weight: bold;
     background-color: var(--light);
@@ -94,7 +113,7 @@ footer{
     font-size: 18px;
     font-weight: 500;
 }
-.btn-secondary{
+.btn-secondary, .btn-primary{
     padding: 20px 40px;
     background-color: var(--secondary);
     text-decoration: none;
@@ -113,6 +132,21 @@ footer{
     background-color: var(--secondary-one);
     color: var(--dark);
 }
+
+.btn-primary{
+    background-color: var(--primary);
+}
+
+.btn-primary > span{
+    font-weight: normal;
+    color: var(--primary-one);
+    transition: var(--timeframe);
+}
+.btn-primary:hover, .btn-primary:hover > span{
+    background-color: var(--primary-one);
+    color: var(--dark);
+}
+
 .footer-body div{
     display: flex;
     justify-content: center;
