@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;900&display=swap');
+
 
 *, *::after, *::before{
     padding: 0;
@@ -15,11 +15,12 @@
     --dark: #28283D;
     --dark-one: #87879D;
     --light: #FAFAFA;
+    --timeframe: 0.4s ease all
 }
 
 body{
     background-color: var(--light);
-    font-family: 'Red Hart Display';
+    font-family: 'Red Hat Display' ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer{
@@ -33,9 +34,40 @@ footer{
     background-color: var(--primary-50);
     min-height: 300px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, minmax(200px, 350px));
+    grid-gap: 50px;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-body h2{
-
+    font-size: 40px;
+}
+.footer-body p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-secondary{
+    padding: 20px 40px;
+    background-color: var(--secondary);
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 30px;
+    transition: var(--timeframe);
+    font-weight: bold;
+}
+.btn-secondary > span{
+    font-weight: normal;
+    color: var(--secondary-one);
+    transition: var(--timeframe);
+}
+.btn-secondary:hover, .btn-secondary:hover > span{
+    background-color: var(--secondary-one);
+    color: var(--dark);
+}
+.footer-body div{
+    display: flex;
+    justify-content: center;
 }
