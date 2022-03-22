@@ -25,8 +25,23 @@ body{
 
 .hero{
     min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 500px));
+    text-align: center;
+    margin: 100px 0;
 }
-
+.hero h1{
+    font-size: 64px;    
+}
+.hero p{
+    font-size: 18px;
+    color: var(--dark-one);
+    margin: 40px 0;
+}
+.hero-links-holder{
+    display: flex;
+    justify-content: space-evenly;
+}
 section{
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, auto));
