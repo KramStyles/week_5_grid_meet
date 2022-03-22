@@ -23,6 +23,12 @@ body{
     font-family: 'Red Hat Display' ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.logo-holder{
+    margin: 50px auto;
+    width: 30%;
+    text-align: center;
+}
+
 .hero{
     min-height: 400px;
     display: grid;
