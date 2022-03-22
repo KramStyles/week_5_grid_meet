@@ -42,6 +42,19 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+.hero-img-holder{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-img-holder div:nth-child(2){
+    margin-top: -50px;
+}
+.hero-img-holder img{
+    margin-bottom: 20px;
+}
+
 section{
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, auto));
