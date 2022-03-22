@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;900&display=swap');
 
 *, *::after, *::before{
     padding: 0;
@@ -7,10 +8,34 @@
 }
 :root{
     --primary: #4D96A9;
+    --primary-50: #4D96A9cc;
     --primary-one: #8FE3F9;
     --secondary: #855FB1;
     --secondary-one: #D9B8FF;
     --dark: #28283D;
     --dark-one: #87879D;
     --light: #FAFAFA;
+}
+
+body{
+    background-color: var(--light);
+    font-family: 'Red Hart Display';
+}
+
+footer{
+    min-height: 300px;
+    background-image: url('../images/meet/footer_img.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.footer-body{
+    background-color: var(--primary-50);
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.footer-body h2{
+
 }
