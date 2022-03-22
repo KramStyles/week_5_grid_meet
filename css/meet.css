@@ -23,7 +23,53 @@ body{
     font-family: 'Red Hat Display' ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+article{
+    text-align: center;
+    width: 40%;
+    margin: 100px auto;
+}
+article h2{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    margin: 30px 0;
+}
+article h5{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.divider{
+    width: 100%;
+    position: absolute;
+    top: -80px;
+}
+.divider_stick{
+    height: 50px;
+    width: 1px;
+    margin: auto;
+    background-color: var(--dark-one);
+}
+.ball{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-one);
+    color: var(--dark-one);
+    font-weight: bold;
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    /* margin-top: -25px; */
+}
+
+/* FOOTER */
+
 footer{
+    position: relative;
     min-height: 300px;
     background-image: url('../images/meet/footer_img.jpg');
     background-position: center;
