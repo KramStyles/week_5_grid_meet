@@ -37,7 +37,7 @@ main{
 
 .topside{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 500px));
     justify-content: space-around;
 }
 .topside h1{
@@ -76,7 +76,7 @@ main{
 .downside{
     margin: 60px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 350px));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 350px));
     position: relative;
     justify-content: space-evenly;
 }
@@ -113,7 +113,12 @@ main{
     font-size: 13px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+    .downside{
+        grid-template-columns: repeat(auto-fill, minmax(auto, 800px));
+    }
+}
+@media screen and (max-width: 650px) {
     .top-img, .bottom-img{
         width: 100%;
     }
