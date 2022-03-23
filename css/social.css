@@ -37,9 +37,8 @@ main{
 
 .topside{
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     justify-content: space-around;
-    margin-bottom: 100px;
 }
 .topside h1{
     font-size: 3em;
@@ -51,15 +50,21 @@ main{
     line-height: 25px;
     color: var(--primary-text);
 }
+
+.topside > div{
+    margin: 15px auto;
+}
+
 .info-box{
-    padding: 20px 40px;
+    padding: 20px;
     border-radius: 8px;
     background-color: var(--secondary);
     color: var(--primary);
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1.3fr;
     align-items: center;
     margin-bottom: 20px;
+    grid-column-gap: 20px;
 }
 .info-box:nth-child(2){
     margin-left: 15px;
@@ -71,15 +76,16 @@ main{
 .downside{
     margin: 60px auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 380px));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 350px));
     position: relative;
+    justify-content: space-evenly;
 }
 
 .downside div{
     padding: 30px;
     background-color: var(--primary);
     color: white;
-    margin: auto 30px;
+    margin: 30px;
     border-radius: 10px;
     /* position: absolute; */
 
@@ -105,4 +111,19 @@ main{
 .downside p{
     line-height: 23px;
     font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+    .top-img, .bottom-img{
+        width: 100%;
+    }
+    .topside h1, .topside p{
+        text-align: center;
+    }
+    .downside div{
+        margin: 8px auto;
+    }
+    .info-box > div{
+        font-size: 0px;
+    }
 }
