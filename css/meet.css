@@ -32,7 +32,9 @@ body{
 .hero{
     min-height: 400px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+    /* grid-template-columns: repeat(auto-fill, minmax(auto, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(auto, 400px));
+    justify-content: space-between;
     text-align: center;
     margin: 100px 0;
 }
@@ -63,17 +65,19 @@ body{
 
 section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
     grid-template-rows: 200px;
     padding: 100px;
     padding-bottom: 0;
     justify-content: center;
     grid-gap: 20px;
     position: relative;
+    grid-gap: 50px;
 }
 section img{
     object-fit: contain;
     border-radius: 10px;
+    margin: 20px;
 }
 
 article{
@@ -92,6 +96,8 @@ article h5{
     color: var(--primary);
     font-weight: 900;
 }
+
+/* Vertical Divider */
 
 .divider{
     width: 100%;
@@ -184,4 +190,19 @@ footer{
 .footer-body div{
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        text-align: center;
+    }
+    article{
+        width: 90%;
+    }
+    .hero div:nth-child(2){
+        margin: 30px 0;
+    }
+    .hero{
+        grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    }
 }
