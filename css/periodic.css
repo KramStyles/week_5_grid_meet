@@ -1,0 +1,21 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template: repeat(auto, 100px) / repeat(18, 1fr);
+    width: 85%;
+
+}
+
+.container div{
+    background-color: burlywood;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
