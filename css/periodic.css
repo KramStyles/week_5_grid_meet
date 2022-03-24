@@ -6,9 +6,10 @@
 
 .container{
     display: grid;
-    grid-template: repeat(auto, 100px) / repeat(18, 1fr);
+    grid-template: repeat(10, 80px) / repeat(18, 1fr);
     width: 85%;
-
+    margin: 20px auto;
+    grid-gap: 10px;
 }
 
 .container div{
@@ -17,5 +18,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px
+    padding: 20px
+}
+.he{
+    grid-column: -1;
+}
+.b{
+    grid-column: -6;
+}
+.al{
+    grid-column-start: -6;
 }
