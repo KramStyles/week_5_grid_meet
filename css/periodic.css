@@ -6,14 +6,14 @@
 
 .container{
     display: grid;
-    grid-template: repeat(10, 80px) / repeat(17, 1fr);
+    grid-template: repeat(10, 1fr) / repeat(17, 1fr);
     width: 95%;
     margin: 20px auto;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .container div{
-    background-color: burlywood;
+    background-color: #B7DBFD;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -31,4 +31,29 @@
 }
 .hf{
     grid-column-start: 4;
+}
+#color-h{
+    background-color: #FEFBBC;
+}
+#color-li{
+    background-color: #F5C7C6;
+}
+#color-be{
+    background-color: #D1D1FE;
+}
+#color-al{
+    background-color: #BAF8BC;
+}
+#color-he{
+    background-color: #FBE3BA;
+}
+#color-c{
+    background-color: #FEFBB9;
+}
+
+#color-f{
+    background-color: #C0FBEB;
+}
+#color-b{
+    background-color: tan;
 }
