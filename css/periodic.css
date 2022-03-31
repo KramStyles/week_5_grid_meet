@@ -14,12 +14,13 @@
 
 .container div{
     background-color: #B7DBFD;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px
+    padding: 10px;
+    font-size: 20px;
 }
+
 .he{
     grid-column: -1;
 }
@@ -56,4 +57,12 @@
 }
 #color-b{
     background-color: tan;
+}
+div>span{
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
+    padding-top: 5px;
+    text-transform: uppercase;
+    align-self: flex-end;
 }
