@@ -24,6 +24,10 @@
 
 .container>div:hover{
     transform: scale(2);
+    font-size: 0px;
+}
+.container>div:hover span{
+    font-size: 16px;
 }
 
 .he{
