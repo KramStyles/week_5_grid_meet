@@ -116,11 +116,18 @@ main{
 @media screen and (max-width: 850px) {
     .downside{
         grid-template-columns: repeat(auto-fill, minmax(auto, 800px));
+        margin-bottom: 200px;
     }
 }
 @media screen and (max-width: 650px) {
     .top-img, .bottom-img{
         width: 100%;
+    }
+    .topside{
+        display: block;
+    }
+    .topside > div{
+        margin-top: 50px;
     }
     .topside h1, .topside p{
         text-align: center;
@@ -128,7 +135,15 @@ main{
     .downside div{
         margin: 8px auto;
     }
+    .info-box:nth-child(2), .info-box:nth-child(3){
+        margin-left: auto;
+    }
+    .info-box{
+        display: block;
+        text-align: center;
+    }
     .info-box > div{
-        font-size: 0px;
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 }
